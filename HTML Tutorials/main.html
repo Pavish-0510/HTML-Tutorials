@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <forn>
+      <input type="number" id="num1" class="num" />
+      <input type="number" id="num2" class="num" />
+      <button type="submit" id="calc" onclick="click()">Calculate</button>
+    </forn>
+
+    <script>
+      let num1 = document.getElementById("num1");
+      let num2 = document.getElementById("num2");
+      let btn = document.getElementById("calc");
+      btn.addEventListener("click", function () {
+        // num1.value + num2.value;
+
+        if (num1 != 0 && num2 != 0) {
+          //   console.log(num1.value + num2.value);
+          let result = num1.value + num2.value;
+          console.log(result);
+        } else {
+          console.log("error");
+        }
+      });
+    </script>
+  </body>
+</html>
